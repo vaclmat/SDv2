@@ -153,14 +153,14 @@ public class MainActivity extends AppCompatActivity implements CredentialsDialog
     public void onDialogPositiveClick(String username, String password) {
         this.username = username;
         this.password = password;
-        String accepted_password = "jit89ka";
-        String accepted_username = "vaclmat@email.cz";
+        String accepted_password = "********";
+        String accepted_username = "***********";
         if (this.username.equals(accepted_username) && this.password.equals(accepted_password)) {
             get_All_Students.setEnabled(true);
             add_Student.setEnabled(true);
             student_id.setEnabled(true);
-            client_id = "7de33e9c-1c2c-426d-8824-57fa8e0a2ccc";
-            client_secret = "J1mR4kY2aT1pO6nS4wE4qN1bB2qI4tX8xK6rT2sO5tG7gD3iT7";
+            client_id = "*************";
+            client_secret = "***************";
             logout_mi.setVisible(true);
             credentials_mi.setVisible(false);
             SaveSharedPreference.setLoggedIn(getApplicationContext(), true);
